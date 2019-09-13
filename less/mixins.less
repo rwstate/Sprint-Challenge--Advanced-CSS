@@ -1,1 +1,21 @@
 // Mixins Here
+.img-styles(@radius) {
+    width: 100%;
+    height: auto;
+    border-radius: @radius;
+}
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-style(@padding, @width) {
+    background-color: darken(#4B0082, 15%);
+    color: white;
+    font-size: 2rem;
+    border: 0px solid;
+    border-radius: 4px;
+    padding: @padding;
+    width: @width;
+}

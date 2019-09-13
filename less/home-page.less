@@ -4,6 +4,13 @@
 
   .intro {
 
+    div {
+      width: 100%;
+      img {
+        .img-styles(5px);
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -43,8 +50,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-center();
 
     .walk-text {
       width: 50%;
@@ -58,6 +64,15 @@
       }
 
       .btn {
+        button {
+          .btn-style(5px 15px, auto);
+
+          &:hover {
+            background-color: white;
+            color: darken(#4B0082, 15%);
+            cursor: pointer;
+          }
+        }
       }
     }
 
@@ -66,9 +81,7 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        .img-styles(10px);
       }
     }
   }
